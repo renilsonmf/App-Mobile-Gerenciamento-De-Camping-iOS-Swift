@@ -23,12 +23,11 @@ class LotesViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         contextLotes = appDelegate.persistentContainer.viewContext
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.recuperarLotes()
-        
+     
     }
     
     //Pega os lotes cadastrados e joga para a collction

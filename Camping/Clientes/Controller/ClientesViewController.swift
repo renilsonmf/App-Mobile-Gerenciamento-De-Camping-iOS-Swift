@@ -24,7 +24,7 @@ class ClientesViewController: UIViewController, UITableViewDelegate, UITableView
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         context = appDelegate.persistentContainer.viewContext
         
-        myTableView.tableFooterView = UIView()//Remote as celulas vazias
+        //myTableView.tableFooterView = UIView()//Remote as celulas vazias
 
     }
     override func viewDidAppear(_ animated: Bool) {
