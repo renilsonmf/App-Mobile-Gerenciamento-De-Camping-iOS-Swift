@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C240A352640DA1A0055E1ED /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C240A342640DA1A0055E1ED /* logo.png */; };
+		1C5233FE2645ACDA00CFB990 /* LotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5233FD2645ACDA00CFB990 /* LotesViewController.swift */; };
+		1C5234042645ADA400CFB990 /* CadastarLoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5234032645ADA400CFB990 /* CadastarLoteViewController.swift */; };
+		1C5234092645C55100CFB990 /* ListaLotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5234082645C55100CFB990 /* ListaLotesCollectionViewCell.swift */; };
+		1C5234142645DC1000CFB990 /* montanhas.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C5234132645DC1000CFB990 /* montanhas.png */; };
+		1C52341E2645DC1900CFB990 /* duas-direcoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C52341D2645DC1900CFB990 /* duas-direcoes.png */; };
+		1C523428264757CF00CFB990 /* barraca.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C523427264757CF00CFB990 /* barraca.png */; };
 		1C5874E72641D261008B7813 /* fundo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C5874E62641D261008B7813 /* fundo.jpg */; };
 		1CE7168F264061BF009814AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7168E264061BF009814AC /* AppDelegate.swift */; };
 		1CE71691264061BF009814AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE71690264061BF009814AC /* SceneDelegate.swift */; };
@@ -40,7 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C240A342640DA1A0055E1ED /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		1C5233FD2645ACDA00CFB990 /* LotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotesViewController.swift; sourceTree = "<group>"; };
+		1C5234032645ADA400CFB990 /* CadastarLoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastarLoteViewController.swift; sourceTree = "<group>"; };
+		1C5234082645C55100CFB990 /* ListaLotesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaLotesCollectionViewCell.swift; sourceTree = "<group>"; };
+		1C5234132645DC1000CFB990 /* montanhas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = montanhas.png; sourceTree = "<group>"; };
+		1C52341D2645DC1900CFB990 /* duas-direcoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "duas-direcoes.png"; sourceTree = "<group>"; };
+		1C523427264757CF00CFB990 /* barraca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barraca.png; sourceTree = "<group>"; };
 		1C5874E62641D261008B7813 /* fundo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fundo.jpg; sourceTree = "<group>"; };
 		1CE7168B264061BF009814AC /* Camping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE7168E264061BF009814AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,9 +96,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C5233FB2645ACAA00CFB990 /* Lotes */ = {
+			isa = PBXGroup;
+			children = (
+				1C5233FC2645ACB700CFB990 /* Controller */,
+				1C5234022645AD7800CFB990 /* View */,
+			);
+			path = Lotes;
+			sourceTree = "<group>";
+		};
+		1C5233FC2645ACB700CFB990 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1C5233FD2645ACDA00CFB990 /* LotesViewController.swift */,
+				1C5234032645ADA400CFB990 /* CadastarLoteViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1C5234022645AD7800CFB990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C5234082645C55100CFB990 /* ListaLotesCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C52340D2645DBEB00CFB990 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				1C523427264757CF00CFB990 /* barraca.png */,
+				1C5874E62641D261008B7813 /* fundo.jpg */,
+				1C5234132645DC1000CFB990 /* montanhas.png */,
+				1C52341D2645DC1900CFB990 /* duas-direcoes.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		1CE71682264061BF009814AC = {
 			isa = PBXGroup;
 			children = (
+				1C52340D2645DBEB00CFB990 /* img */,
 				1CE7168D264061BF009814AC /* Camping */,
 				1CE716A7264061C2009814AC /* CampingTests */,
 				1CE716B2264061C2009814AC /* CampingUITests */,
@@ -109,13 +157,12 @@
 		1CE7168D264061BF009814AC /* Camping */ = {
 			isa = PBXGroup;
 			children = (
+				1C5233FB2645ACAA00CFB990 /* Lotes */,
 				1CE716CC2640684C009814AC /* Clientes */,
 				1CE7168E264061BF009814AC /* AppDelegate.swift */,
 				1CE71690264061BF009814AC /* SceneDelegate.swift */,
 				1CE71694264061BF009814AC /* Main.storyboard */,
 				1CE7169A264061C2009814AC /* Assets.xcassets */,
-				1C5874E62641D261008B7813 /* fundo.jpg */,
-				1C240A342640DA1A0055E1ED /* logo.png */,
 				1CE7169C264061C2009814AC /* LaunchScreen.storyboard */,
 				1CE7169F264061C2009814AC /* Info.plist */,
 				1CE71697264061BF009814AC /* Camping.xcdatamodeld */,
@@ -270,8 +317,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C240A352640DA1A0055E1ED /* logo.png in Resources */,
+				1C5234142645DC1000CFB990 /* montanhas.png in Resources */,
 				1CE7169E264061C2009814AC /* LaunchScreen.storyboard in Resources */,
+				1C523428264757CF00CFB990 /* barraca.png in Resources */,
+				1C52341E2645DC1900CFB990 /* duas-direcoes.png in Resources */,
 				1CE7169B264061C2009814AC /* Assets.xcassets in Resources */,
 				1CE71696264061BF009814AC /* Main.storyboard in Resources */,
 			);
@@ -299,9 +348,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C5234092645C55100CFB990 /* ListaLotesCollectionViewCell.swift in Sources */,
 				1CE71693264061BF009814AC /* ClientesViewController.swift in Sources */,
 				1CE7168F264061BF009814AC /* AppDelegate.swift in Sources */,
+				1C5234042645ADA400CFB990 /* CadastarLoteViewController.swift in Sources */,
 				1CE716C5264067FA009814AC /* ListaClientesTableViewCell.swift in Sources */,
+				1C5233FE2645ACDA00CFB990 /* LotesViewController.swift in Sources */,
 				1CE716D0264068D2009814AC /* CadastrarClientesViewController.swift in Sources */,
 				1CE71691264061BF009814AC /* SceneDelegate.swift in Sources */,
 				1CE71699264061BF009814AC /* Camping.xcdatamodeld in Sources */,

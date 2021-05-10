@@ -20,7 +20,7 @@ class CadastrarClientesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "fundo.jpg")!)
+        //view.backgroundColor = UIColor(patternImage: UIImage(named: "fundo.jpg")!)
         self.TextFieldNome.becomeFirstResponder()//Mostra o teclado
         
         // Seta novamente os dados nos campos para ser alterado

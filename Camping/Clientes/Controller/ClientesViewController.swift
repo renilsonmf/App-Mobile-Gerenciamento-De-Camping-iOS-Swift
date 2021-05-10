@@ -17,11 +17,15 @@ class ClientesViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "fundo.jpg")!)
+        //view.backgroundColor = UIColor(patternImage: UIImage(named: "fundo.jpg")!)
         self.myTableView.dataSource = self
         self.myTableView.delegate = self
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         context = appDelegate.persistentContainer.viewContext
+        
+        myTableView.tableFooterView = UIView()//Remote as celulas vazias
+
     }
     override func viewDidAppear(_ animated: Bool) {
         self.recuperarClientes()
@@ -44,16 +48,15 @@ class ClientesViewController: UIViewController, UITableViewDelegate, UITableView
     //Conteudo da row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellClientes", for: indexPath) as! ListaClientesTableViewCell
-        
         let cliente = self.clientes[indexPath.row]
         let campoNome = cliente.value(forKey: "nome")
-        let campoTelefone = cliente.value(forKey: "telefone")
-        let campoCpf = cliente.value(forKey: "cpf")
+       // let campoTelefone = cliente.value(forKey: "telefone")
+        //let campoCpf = cliente.value(forKey: "cpf")
         let campoLote = cliente.value(forKey: "lote")
         
         cell.LabelNomeTable.text = campoNome as? String
-        cell.LabelTelefoneTable.text = campoTelefone as? String
-        cell.LabelCpfTable.text = campoCpf as? String
+       // cell.LabelTelefoneTable.text = campoTelefone as? String
+        //cell.LabelCpfTable.text = campoCpf as? String
         cell.LabelLoteTable.text = campoLote as? String
         return cell
         
