@@ -9,7 +9,8 @@ import UIKit
 
 class ListaLotesCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var labelLoteLotes: UILabel!
-    @IBOutlet weak var LabelDescricaoLotes: UILabel!
-    @IBOutlet weak var LabelPrecoLotes: UILabel!
+    @IBOutlet weak var labelNumeroLote: UILabel!
+    @IBOutlet weak var labelPrecoLote: UILabel!
+    @IBOutlet weak var labelAreaLotes: UILabel!
+    @IBOutlet weak var labelDescricaoLote: UILabel!
 }

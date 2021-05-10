@@ -24,23 +24,9 @@ class CadastrarClientesViewController: UIViewController {
         self.TextFieldNome.becomeFirstResponder()//Mostra o teclado
         
         // Seta novamente os dados nos campos para ser alterado
-        if cliente != nil{
-            guard let nomeRecuperado = cliente.value(forKey: "nome") else{return}
-            guard let telefoneRecuperado = cliente.value(forKey: "telefone") else{return}
-            guard let cpfRecuperado = cliente.value(forKey: "cpf") else{return}
-            guard let loteRecuperado = cliente.value(forKey: "lote") else{return}
-
-            self.TextFieldNome.text = String(describing: nomeRecuperado)
-            self.TextFieldTelefone.text = String(describing: telefoneRecuperado)
-            self.TextFieldCpf.text = String(describing: cpfRecuperado)
-            self.TextFieldLote.text = String(describing: loteRecuperado)
-        }else{
-            self.TextFieldNome.text = ""
-            self.TextFieldTelefone.text = ""
-            self.TextFieldCpf.text = ""
-            self.TextFieldLote.text = ""
-        }
+        setaDadosNovamenteNoCadastro()
         
+        //CoreData
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         context = appDelegate.persistentContainer.viewContext
         
@@ -57,6 +43,28 @@ class CadastrarClientesViewController: UIViewController {
         //Retorna para a tela de clientes ao clicar no botão
         self.navigationController?.popViewController(animated: true)
     }
+    
+    //Seta os dados novamente na tela de cadastro
+    func setaDadosNovamenteNoCadastro(){
+        if cliente != nil{
+            guard let nomeRecuperado = cliente.value(forKey: "nome") else{return}
+            guard let telefoneRecuperado = cliente.value(forKey: "telefone") else{return}
+            guard let cpfRecuperado = cliente.value(forKey: "cpf") else{return}
+            guard let loteRecuperado = cliente.value(forKey: "lote") else{return}
+
+            self.TextFieldNome.text = String(describing: nomeRecuperado)
+            self.TextFieldTelefone.text = String(describing: telefoneRecuperado)
+            self.TextFieldCpf.text = String(describing: cpfRecuperado)
+            self.TextFieldLote.text = String(describing: loteRecuperado)
+        }else{
+            self.TextFieldNome.text = ""
+            self.TextFieldTelefone.text = ""
+            self.TextFieldCpf.text = ""
+            self.TextFieldLote.text = ""
+        }
+    }
+    
+    
     // Salva os dados após o usuario salvar a edição
     func atualizarCliente() {
         cliente.setValue(self.TextFieldNome.text, forKey: "nome")
