@@ -1,2 +1,3 @@
-# App-Mobile-Gerenciamento-De-Camping-iOS-Swift
-Aplicativo para gerenciamento de campings, nele o usuario pode cadastrar lotes, reservar os lotes e fazer o cadastro do cliente que reservou o lote. 
+# Aplicativo para gerenciamento de campings
+O aplicativo permite que o responsavel pelo camping possa cadastrar lotes, reservar os lotes e fazer o cadastro do cliente que reservou. 
+Foi desenvolvido totalmente nativo para iOS 
