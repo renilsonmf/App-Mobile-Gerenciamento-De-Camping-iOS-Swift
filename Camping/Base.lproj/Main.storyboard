@@ -11,7 +11,52 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Clientes-->
+        <!--Reservas View Controller-->
+        <scene sceneID="rVr-Oi-5m6">
+            <objects>
+                <viewController id="4Hs-fo-bp2" customClass="ReservasViewController" customModule="Camping" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XZ6-xW-5aV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Vke-pS-CpV">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9l-9I-EJk">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd5-me-iEa">
+                                                <rect key="frame" x="59" y="67" width="286" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eNF-1J-IA9"/>
+                        <color key="backgroundColor" red="0.57144308089999996" green="0.73731184009999995" blue="0.43490582700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eNF-1J-IA9" firstAttribute="trailing" secondItem="Vke-pS-CpV" secondAttribute="trailing" id="5kB-z1-URm"/>
+                            <constraint firstItem="Vke-pS-CpV" firstAttribute="leading" secondItem="eNF-1J-IA9" secondAttribute="leading" id="WVc-xy-lbJ"/>
+                            <constraint firstItem="Vke-pS-CpV" firstAttribute="top" secondItem="eNF-1J-IA9" secondAttribute="top" id="i7d-wJ-UDf"/>
+                            <constraint firstItem="eNF-1J-IA9" firstAttribute="bottom" secondItem="Vke-pS-CpV" secondAttribute="bottom" id="kEz-ub-qCt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="par-Kd-RdE"/>
+                    <connections>
+                        <outlet property="labelNomeReservas" destination="kd5-me-iEa" id="xx2-pt-GKD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpq-hJ-Lcj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3264.8000000000002" y="163.26836581709148"/>
+        </scene>
+        <!--Reservas-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ClientesViewController" customModule="Camping" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,6 +117,7 @@
                                                 <connections>
                                                     <outlet property="LabelLoteTable" destination="EVe-Mh-hLC" id="IQV-ia-6xo"/>
                                                     <outlet property="LabelNomeTable" destination="Ys5-sJ-wPR" id="TiI-fc-C5w"/>
+                                                    <segue destination="4Hs-fo-bp2" kind="show" identifier="verCliente" trigger="accessoryAction" id="Q68-6z-ESe"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -88,26 +134,19 @@
                             <constraint firstItem="dDg-Rq-Fvd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rmf-Ug-2Uj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Clientes" id="G14-lt-ncE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wRh-ip-dCi">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <segue destination="XOm-gd-h4n" kind="show" identifier="verCliente" id="Vc7-zl-19G"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Reservas" id="G14-lt-ncE"/>
                     <connections>
                         <outlet property="myTableView" destination="sN7-Jv-I98" id="Fre-W5-0Vl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-335.19999999999999" y="185.75712143928038"/>
+            <point key="canvasLocation" x="-2538" y="167"/>
         </scene>
-        <!--Cadastrar Clientes View Controller-->
+        <!--Cadastro Reservas View Controller-->
         <scene sceneID="LWj-ET-jhO">
             <objects>
-                <viewController id="XOm-gd-h4n" customClass="CadastrarClientesViewController" customModule="Camping" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XOm-gd-h4n" customClass="CadastroReservasViewController" customModule="Camping" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ya-KV-mEQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,6 +251,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="barraca.png" renderingMode="original"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pf-Hb-rE1">
+                                <rect key="frame" x="16" y="457" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wTc-th-TAP"/>
                         <color key="backgroundColor" red="0.57144308089999996" green="0.73731184009999995" blue="0.43490582700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -220,10 +267,10 @@
                     <navigationItem key="navigationItem" id="cmr-uw-nIv">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Yrv-5u-lXY">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="f2m-wt-s39">
-                                <rect key="frame" x="268" y="5.5" width="91" height="33"/>
+                                <rect key="frame" x="223" y="5.5" width="136" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Cadastrar">
+                                <state key="normal" title="Reservar lote">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -237,11 +284,12 @@
                         <outlet property="TextFieldLote" destination="Ry1-rH-3oG" id="nKA-hf-Oof"/>
                         <outlet property="TextFieldNome" destination="JVd-l4-cjD" id="wHg-sy-MmY"/>
                         <outlet property="TextFieldTelefone" destination="jtF-Ae-sje" id="Kal-UZ-rCJ"/>
+                        <outlet property="labelValidaCampoCliente" destination="8Pf-Hb-rE1" id="txb-iz-w39"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0d7-LL-qkb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="430" y="186"/>
+            <point key="canvasLocation" x="-1740" y="167"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jWF-f4-8O7">
@@ -262,7 +310,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3H-nY-ZCo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-903" y="-1370"/>
+            <point key="canvasLocation" x="-2143" y="-1366"/>
         </scene>
         <!--Lotes-->
         <scene sceneID="mlV-aS-42j">
@@ -288,7 +336,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVe-aG-hlC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1564" y="-600"/>
+            <point key="canvasLocation" x="-1740" y="-600"/>
         </scene>
         <!--Clientes-->
         <scene sceneID="DPl-vo-WXx">
@@ -317,7 +365,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLI-SQ-liZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-335" y="-600"/>
+            <point key="canvasLocation" x="-2537" y="-600"/>
         </scene>
         <!--Lotes-->
         <scene sceneID="h51-MI-DjE">
@@ -422,6 +470,7 @@
                                             <outlet property="labelDescricaoLote" destination="Rs4-vQ-1oO" id="xFD-ex-Kt7"/>
                                             <outlet property="labelNumeroLote" destination="bq7-fj-OpN" id="LUJ-jE-zjc"/>
                                             <outlet property="labelPrecoLote" destination="0IL-6h-SjF" id="GeR-tM-aNB"/>
+                                            <segue destination="XOm-gd-h4n" kind="show" identifier="cadastrarLote" id="1PD-4s-hld"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -459,7 +508,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kFS-bo-T5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1959.2" y="166.8665667166417"/>
+            <point key="canvasLocation" x="-986" y="167"/>
         </scene>
         <!--Cadastar Lote View Controller-->
         <scene sceneID="nGv-hi-Pd7">
@@ -569,6 +618,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <imageReference key="image" image="barraca.png" renderingMode="original"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcA-0C-2nJ">
+                                <rect key="frame" x="16" y="547" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mE6-qr-Uoh"/>
                         <color key="backgroundColor" red="0.57144308089999996" green="0.73731184009999995" blue="0.43490582700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -583,6 +640,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="TextViewDescricaoLote" destination="YKL-7b-9DP" id="UGY-uP-il8"/>
+                        <outlet property="labelValidaCamposLote" destination="BcA-0C-2nJ" id="ECW-ox-0wX"/>
                         <outlet property="textFieldAreaLote" destination="HIw-IB-3Xk" id="IwQ-KN-47n"/>
                         <outlet property="textFieldNumeroLote" destination="yPu-Y5-0Wt" id="tsb-RT-2Fa"/>
                         <outlet property="textFieldPrecoLote" destination="skK-et-MeQ" id="x5e-y0-lqY"/>
@@ -590,7 +648,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3t-4c-47s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1234.4000000000001" y="166.8665667166417"/>
+            <point key="canvasLocation" x="-231.19999999999999" y="166.8665667166417"/>
         </scene>
     </scenes>
     <resources>
@@ -604,6 +662,9 @@
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

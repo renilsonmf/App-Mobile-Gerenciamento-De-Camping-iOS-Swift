@@ -15,16 +15,7 @@ class CadastarLoteViewController: UIViewController {
     @IBOutlet weak var textFieldAreaLote: UITextField!
     @IBOutlet weak var TextViewDescricaoLote: UITextView!
     
-    @IBAction func buttonCadastrarLote(_ sender: Any) {
-        if lote != nil{
-            self.atualizarCliente()
-        }else{
-            self.salvarCliente()
-        }
-        //Retorna para a tela de clientes ao clicar no botão
-        self.navigationController?.popViewController(animated: true)
-    }
-    
+    @IBOutlet weak var labelValidaCamposLote: UILabel!
     
     var contextLotes: NSManagedObjectContext!
     var lote: NSManagedObject!
@@ -38,6 +29,34 @@ class CadastarLoteViewController: UIViewController {
         
         setaDadosNovamenteNoCadastroLote()
     }
+    
+    
+    @IBAction func buttonCadastrarLote(_ sender: Any) {
+        if textFieldNumeroLote.text == ""{
+            labelValidaCamposLote.text = "Favor preencher o campo Lote!!"
+        }
+        else if textFieldPrecoLote.text == ""{
+            labelValidaCamposLote.text = "Favor preencher o campo Preço!!"
+        }
+        else if textFieldAreaLote.text == ""{
+            labelValidaCamposLote.text = "Favor preencher o campo Área!!"
+        }
+        else if TextViewDescricaoLote.text == ""{
+            labelValidaCamposLote.text = "Favor preencher o campo descrição!!"
+        }
+        else{
+            self.salvarCliente()
+            //Retorna para a tela de clientes ao clicar no botão
+            self.navigationController?.popViewController(animated: true)
+
+        }
+//        if lote != nil{
+//            self.atualizarCliente()
+//        }else{
+//            self.salvarCliente()
+//        }
+    }
+    
     
     //Salva dados inseridos nos TextFields
     func salvarCliente(){

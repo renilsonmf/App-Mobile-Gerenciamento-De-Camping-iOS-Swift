@@ -30,7 +30,7 @@ class ClientesViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidAppear(_ animated: Bool) {
         self.recuperarClientes()
     }
-    
+
     func recuperarClientes(){
         let requisicao = NSFetchRequest<NSFetchRequestResult>(entityName: "Clientes")
         do {
@@ -55,9 +55,11 @@ class ClientesViewController: UIViewController, UITableViewDelegate, UITableView
         let campoLote = cliente.value(forKey: "lote")
         
         cell.LabelNomeTable.text = campoNome as? String
-       // cell.LabelTelefoneTable.text = campoTelefone as? String
+       //cell.LabelTelefoneTable.text = campoTelefone as? String
         //cell.LabelCpfTable.text = campoCpf as? String
         cell.LabelLoteTable.text = campoLote as? String
+        
+
         return cell
         
     }
@@ -67,13 +69,16 @@ class ClientesViewController: UIViewController, UITableViewDelegate, UITableView
         let indice = indexPath.row
         let cliente = self.clientes[indice]
         self.performSegue(withIdentifier: "verCliente", sender: cliente)
+        ReservasViewController().clienteReserva = cliente
+
     }
-    //Após clicar na celula, o usuario é levado novamente para tela de cadastro
+   // Após clicar na celula, o usuario é levado novamente para tela de cadastro
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "verCliente" {
-            let viewDestino = segue.destination as! CadastrarClientesViewController
-            viewDestino.cliente = sender as? NSManagedObject
-        }
+            if let viewDestino = segue.destination as? ReservasViewController{
+                viewDestino.clienteReserva = sender as? NSManagedObject
+            }
+       }
     }
     // Altura da celula
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

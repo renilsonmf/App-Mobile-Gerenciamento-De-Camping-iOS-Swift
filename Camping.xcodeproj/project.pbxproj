@@ -14,17 +14,18 @@
 		1C52341E2645DC1900CFB990 /* duas-direcoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C52341D2645DC1900CFB990 /* duas-direcoes.png */; };
 		1C523428264757CF00CFB990 /* barraca.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C523427264757CF00CFB990 /* barraca.png */; };
 		1C5874E72641D261008B7813 /* fundo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1C5874E62641D261008B7813 /* fundo.jpg */; };
+		1C6167E32649AEF800C2C910 /* ReservasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6167E22649AEF800C2C910 /* ReservasViewController.swift */; };
+		1C6ECE9F264B224D007CAEC0 /* Camping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C6ECE9D264B224D007CAEC0 /* Camping.xcdatamodeld */; };
 		1CE7168F264061BF009814AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7168E264061BF009814AC /* AppDelegate.swift */; };
 		1CE71691264061BF009814AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE71690264061BF009814AC /* SceneDelegate.swift */; };
 		1CE71693264061BF009814AC /* ClientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE71692264061BF009814AC /* ClientesViewController.swift */; };
 		1CE71696264061BF009814AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE71694264061BF009814AC /* Main.storyboard */; };
-		1CE71699264061BF009814AC /* Camping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CE71697264061BF009814AC /* Camping.xcdatamodeld */; };
 		1CE7169B264061C2009814AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE7169A264061C2009814AC /* Assets.xcassets */; };
 		1CE7169E264061C2009814AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE7169C264061C2009814AC /* LaunchScreen.storyboard */; };
 		1CE716A9264061C2009814AC /* CampingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE716A8264061C2009814AC /* CampingTests.swift */; };
 		1CE716B4264061C2009814AC /* CampingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE716B3264061C2009814AC /* CampingUITests.swift */; };
 		1CE716C5264067FA009814AC /* ListaClientesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE716C4264067FA009814AC /* ListaClientesTableViewCell.swift */; };
-		1CE716D0264068D2009814AC /* CadastrarClientesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE716CF264068D2009814AC /* CadastrarClientesViewController.swift */; };
+		1CE716D0264068D2009814AC /* CadastroReservasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE716CF264068D2009814AC /* CadastroReservasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +53,13 @@
 		1C52341D2645DC1900CFB990 /* duas-direcoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "duas-direcoes.png"; sourceTree = "<group>"; };
 		1C523427264757CF00CFB990 /* barraca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barraca.png; sourceTree = "<group>"; };
 		1C5874E62641D261008B7813 /* fundo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fundo.jpg; sourceTree = "<group>"; };
+		1C6167E22649AEF800C2C910 /* ReservasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservasViewController.swift; sourceTree = "<group>"; };
+		1C6ECE9E264B224D007CAEC0 /* Camping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Camping.xcdatamodel; sourceTree = "<group>"; };
 		1CE7168B264061BF009814AC /* Camping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Camping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CE7168E264061BF009814AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CE71690264061BF009814AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1CE71692264061BF009814AC /* ClientesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientesViewController.swift; sourceTree = "<group>"; };
 		1CE71695264061BF009814AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1CE71698264061BF009814AC /* Camping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Camping.xcdatamodel; sourceTree = "<group>"; };
 		1CE7169A264061C2009814AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CE7169D264061C2009814AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CE7169F264061C2009814AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 		1CE716B3264061C2009814AC /* CampingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampingUITests.swift; sourceTree = "<group>"; };
 		1CE716B5264061C2009814AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CE716C4264067FA009814AC /* ListaClientesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaClientesTableViewCell.swift; sourceTree = "<group>"; };
-		1CE716CF264068D2009814AC /* CadastrarClientesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarClientesViewController.swift; sourceTree = "<group>"; };
+		1CE716CF264068D2009814AC /* CadastroReservasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroReservasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,14 @@
 			path = img;
 			sourceTree = "<group>";
 		};
+		1C6167E12649AECC00C2C910 /* Reservas */ = {
+			isa = PBXGroup;
+			children = (
+				1C6167E22649AEF800C2C910 /* ReservasViewController.swift */,
+			);
+			path = Reservas;
+			sourceTree = "<group>";
+		};
 		1CE71682264061BF009814AC = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +167,7 @@
 		1CE7168D264061BF009814AC /* Camping */ = {
 			isa = PBXGroup;
 			children = (
+				1C6167E12649AECC00C2C910 /* Reservas */,
 				1C5233FB2645ACAA00CFB990 /* Lotes */,
 				1CE716CC2640684C009814AC /* Clientes */,
 				1CE7168E264061BF009814AC /* AppDelegate.swift */,
@@ -164,8 +175,8 @@
 				1CE71690264061BF009814AC /* SceneDelegate.swift */,
 				1CE7169A264061C2009814AC /* Assets.xcassets */,
 				1CE7169C264061C2009814AC /* LaunchScreen.storyboard */,
+				1C6ECE9D264B224D007CAEC0 /* Camping.xcdatamodeld */,
 				1CE7169F264061C2009814AC /* Info.plist */,
-				1CE71697264061BF009814AC /* Camping.xcdatamodeld */,
 			);
 			path = Camping;
 			sourceTree = "<group>";
@@ -209,7 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				1CE71692264061BF009814AC /* ClientesViewController.swift */,
-				1CE716CF264068D2009814AC /* CadastrarClientesViewController.swift */,
+				1CE716CF264068D2009814AC /* CadastroReservasViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -353,10 +364,11 @@
 				1CE7168F264061BF009814AC /* AppDelegate.swift in Sources */,
 				1C5234042645ADA400CFB990 /* CadastarLoteViewController.swift in Sources */,
 				1CE716C5264067FA009814AC /* ListaClientesTableViewCell.swift in Sources */,
+				1C6ECE9F264B224D007CAEC0 /* Camping.xcdatamodeld in Sources */,
+				1C6167E32649AEF800C2C910 /* ReservasViewController.swift in Sources */,
 				1C5233FE2645ACDA00CFB990 /* LotesViewController.swift in Sources */,
-				1CE716D0264068D2009814AC /* CadastrarClientesViewController.swift in Sources */,
+				1CE716D0264068D2009814AC /* CadastroReservasViewController.swift in Sources */,
 				1CE71691264061BF009814AC /* SceneDelegate.swift in Sources */,
-				1CE71699264061BF009814AC /* Camping.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,12 +697,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1CE71697264061BF009814AC /* Camping.xcdatamodeld */ = {
+		1C6ECE9D264B224D007CAEC0 /* Camping.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				1CE71698264061BF009814AC /* Camping.xcdatamodel */,
+				1C6ECE9E264B224D007CAEC0 /* Camping.xcdatamodel */,
 			);
-			currentVersion = 1CE71698264061BF009814AC /* Camping.xcdatamodel */;
+			currentVersion = 1C6ECE9E264B224D007CAEC0 /* Camping.xcdatamodel */;
 			path = Camping.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

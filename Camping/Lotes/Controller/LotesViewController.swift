@@ -50,12 +50,7 @@ class LotesViewController: UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaLote", for: indexPath) as! ListaLotesCollectionViewCell
         
-        //Configurando celula
-        //cell.layer.cornerRadius = 7
-        //cell.layer.shadowRadius = 4
-        //cell.layer.shadowOffset = .zero
-        //cell.layer.shadowOpacity = 0.5
-        //cell.layer.shadowColor = UIColor.gray.cgColor
+      
         cell.layer.shadowPath = UIBezierPath(rect: cell.bounds).cgPath
         cell.layer.masksToBounds = false
         
@@ -80,7 +75,24 @@ class LotesViewController: UIViewController, UICollectionViewDelegate, UICollect
         //let alturaCelula = collectionView.bounds.height / 1
         return CGSize(width: 340, height: 383)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        self.myCollection.deselectItem(at: indexPath, animated: true)
+        let indice = indexPath.row
+        let lote = self.lotes[indice]
+        ReservasViewController().loteReserva = lote
+        //CadastrarClientesViewController().lote = lote
+       // self.performSegue(withIdentifier: "cadastrarLote", sender: lote)
+    }
 
+    //Após clicar na celula, o usuario é levado novamente para tela de cadastro
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "cadastrarLote" {
+            let viewDestino = segue.destination as! CadastroReservasViewController
+          //  viewDestino.lote = sender as? NSManagedObject
+        }
+    }
     
 
 }
