@@ -11,6 +11,9 @@ import CoreData
 class ReservasViewController: UIViewController {
 
     @IBOutlet weak var labelNomeReservas: UILabel!
+    @IBOutlet weak var labelTelefoneResercas: UILabel!
+    @IBOutlet weak var labelCpfReservas: UILabel!
+    @IBOutlet weak var labelLoteAlugado: UILabel!
     
     var contextReservas: NSManagedObjectContext!
     
@@ -20,18 +23,19 @@ class ReservasViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        listaReserva()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    func listaReserva(){
         guard let nome = clienteReserva.value(forKey: "nome") else {return}
-       labelNomeReservas.text = " Nome: \(nome)"
-       
-        
-        
-//        if let teste = clienteReserva?.value(forKey: "nome") {
-//            labelNomeReservas.text = teste as! String
-//        }
+        guard let telefone = clienteReserva.value(forKey: "telefone") else {return}
+        guard let cpf = clienteReserva.value(forKey: "cpf") else {return}
+        //guard let loteAlugado = loteReserva.value(forKey: "numeroLote") else {return}
+
+        labelNomeReservas.text = " Nome: \(nome)"
+        labelTelefoneResercas.text = "Telefone: \(telefone)"
+        labelCpfReservas.text = "Cpf: \(cpf)"
+        //labelLoteAlugado.text = "Lote: \(loteAlugado)"
     }
     
 
