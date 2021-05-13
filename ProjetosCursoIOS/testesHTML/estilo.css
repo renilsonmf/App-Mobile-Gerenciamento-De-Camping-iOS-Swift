@@ -1,0 +1,201 @@
+
+body {
+	background-color: #F2F5F7;
+}
+.imgIcon{
+  margin-top: 10px;
+  width: 50px;
+}
+.container {
+	width: 94%;
+	margin: 0 auto;
+}
+
+.containerPrincipal {
+	background-color:black;
+	padding: 15px 0;
+  
+}
+
+.containerPrincipal-titulo a {
+	text-decoration: none;
+	color: white;
+}
+
+.containerPrincipal-nav-link {
+	padding: 10px;
+	margin-bottom: 10px;
+	color: black;
+	background-color: #FFF;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
+}
+
+.conteudoPrincipal {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.subtitulo {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.conteudoPrincipal-BitBeca-link {
+	height: 170px;
+	background-color: rgb(227, 230, 228);
+	text-align: center;
+	transition: .3s;
+	box-shadow: 2px 2px 2px #CCC;
+	position: relative;
+  list-style: none; 
+}
+
+.conteudoPrincipal-BitBeca-link a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.conteudoPrincipal-BitBeca-link:hover {
+	box-shadow: 4px 4px 4px #CCC;
+}
+
+.conteudoPrincipal-BitBeca-link a:before {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 80px;
+	margin: 10px auto;
+}
+.tag-a{
+	margin-top: 25px;
+}
+
+
+
+@media(min-width: 769px) {
+
+	.container {
+		width: 85%;	
+	}
+
+	.subtitulo {
+		text-align: left;
+	}
+
+	.containerPrincipal-nav-link {
+		border-radius: 5px;
+		border: 1px solid #9799A6;
+	}
+
+	.containerPrincipal-nav-link:hover {
+		color: #FFF;
+		background-color: #9799A6;
+	}
+
+	.containerPrincipal-titulo {
+		margin: 0;
+	}
+
+	.containerPrincipal-nav {
+		width: auto;
+	}
+
+	.containerPrincipal-nav-link {
+		width: auto;
+		margin: 0 0 0 10px;
+	}
+
+	.conteudoPrincipal-BitBeca-link:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.conteudoPrincipal-BitBeca-link:nth-child(3n+1) {
+		margin-left: 0;
+	}
+
+}
+
+@media(min-width: 1000px) {
+	.conteudoPrincipal-BitBeca-link {
+		margin: 1.333%;
+	}
+
+	.conteudoPrincipal-BitBeca-link:nth-child(3n) {
+		margin-right: 1.33%;
+	}
+
+	.conteudoPrincipal-BitBeca-link:nth-child(3n+1) {
+		margin-left: 1.333%;
+	}
+
+	.conteudoPrincipal-BitBeca-link:nth-child(4n) {
+		margin-right: 0;
+	}
+
+	.conteudoPrincipal-BitBeca-link:nth-child(4n+1) {
+		margin-left: 0;
+	}
+}
+
+.containerPrincipal .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.containerPrincipal-nav {
+	display: flex;
+}
+.conteudoPrincipal-BitBeca {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.conteudoPrincipal-BitBeca-link {
+	width: 23%;
+	margin: 1%;
+}
+
+.conteudoPrincipal-BitBeca-link:nth-child(4n) {
+	margin-right: 0;
+}
+
+.conteudoPrincipal-BitBeca-link:nth-child(4n+1) {
+	margin-left: 0;
+}
+
+/*parte mobile*/
+@media(max-width: 768px) {
+	.containerPrincipal-nav {
+		flex-direction: column;
+	}
+
+	.containerPrincipal .container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.conteudoPrincipal-BitBeca {
+		flex-direction: column;
+	}
+
+	.conteudoPrincipal-BitBeca-link {
+		width: 100%;
+	}
+
+	.containerPrincipal-nav-link-app {
+		order: -1;
+	}
+
+}
+
