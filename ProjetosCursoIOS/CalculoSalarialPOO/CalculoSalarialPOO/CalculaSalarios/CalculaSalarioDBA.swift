@@ -7,21 +7,16 @@
 
 import UIKit
 
-class CalculaSalarioDBA {
+class CalculaSalarioDBA: CalculadoraSalario{
     
-    func calcula(salBruto: Double) -> Double{
-        var salLiquido: Double = 0
-        var desconto: Double = 0
-        if salBruto > 2500{
-            desconto = salBruto * 0.25
-             salLiquido = salBruto - desconto
-            return salLiquido
+    func calcularSalarioLiquido(salarioBruto: Double) -> Double {
+        var desconto: Double
+        if(salarioBruto > 2500){
+            desconto = 0.25
         }else{
-            desconto = salBruto * 0.15
-             salLiquido = salBruto - desconto
-            return salLiquido
+            desconto = 0.15
         }
-
+        return salarioBruto - (salarioBruto * desconto)
     }
-    
 }
+

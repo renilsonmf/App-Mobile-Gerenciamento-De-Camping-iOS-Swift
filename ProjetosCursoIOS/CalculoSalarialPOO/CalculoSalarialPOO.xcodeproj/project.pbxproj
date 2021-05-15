@@ -16,16 +16,17 @@
 		1C45691B264C98F900ECC187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C456919264C98F900ECC187 /* LaunchScreen.storyboard */; };
 		1C456926264C98F900ECC187 /* CalculoSalarialPOOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C456925264C98F900ECC187 /* CalculoSalarialPOOTests.swift */; };
 		1C456931264C98F900ECC187 /* CalculoSalarialPOOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C456930264C98F900ECC187 /* CalculoSalarialPOOUITests.swift */; };
-		1C456946264CADE900ECC187 /* Colaborador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C456945264CADE900ECC187 /* Colaborador.swift */; };
 		1C45694C264CAE5000ECC187 /* CalculaSalarioDesenvolvedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C45694B264CAE5000ECC187 /* CalculaSalarioDesenvolvedor.swift */; };
-		1C456958264CB0D100ECC187 /* Desenvolvedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C456957264CB0D100ECC187 /* Desenvolvedor.swift */; };
-		1C45695F264CB24700ECC187 /* ImprimeDados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C45695E264CB24700ECC187 /* ImprimeDados.swift */; };
-		1C456967264CBE5C00ECC187 /* Gerente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C456966264CBE5C00ECC187 /* Gerente.swift */; };
-		1C45696F264CBFAC00ECC187 /* CalculaSalarioGerentes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C45696E264CBFAB00ECC187 /* CalculaSalarioGerentes.swift */; };
+		1C45695F264CB24700ECC187 /* MaquinaDeSalario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C45695E264CB24700ECC187 /* MaquinaDeSalario.swift */; };
+		1C45696F264CBFAC00ECC187 /* CalculaSalarioGerente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C45696E264CBFAB00ECC187 /* CalculaSalarioGerente.swift */; };
 		1C72E4F7264DA01F009E73B4 /* CalculaSalarioDBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E4F6264DA01F009E73B4 /* CalculaSalarioDBA.swift */; };
 		1C72E4FC264DA0F9009E73B4 /* CalculaSalarioQA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E4FB264DA0F9009E73B4 /* CalculaSalarioQA.swift */; };
-		1C72E501264DA162009E73B4 /* DBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E500264DA162009E73B4 /* DBA.swift */; };
-		1C72E509264DA179009E73B4 /* QA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E508264DA179009E73B4 /* QA.swift */; };
+		1C72E574264E0E60009E73B4 /* Desenvolvedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E573264E0E60009E73B4 /* Desenvolvedor.swift */; };
+		1C72E57C264EAF46009E73B4 /* CalculadoraSalario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E57B264EAF46009E73B4 /* CalculadoraSalario.swift */; };
+		1C72E58D264EDDFB009E73B4 /* Funcionario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E58C264EDDFB009E73B4 /* Funcionario.swift */; };
+		1C72E595264F06AD009E73B4 /* QA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E594264F06AD009E73B4 /* QA.swift */; };
+		1C72E59A264F0726009E73B4 /* DBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E599264F0726009E73B4 /* DBA.swift */; };
+		1C72E59F264F0764009E73B4 /* Gerente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E59E264F0764009E73B4 /* Gerente.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,16 +63,17 @@
 		1C456930264C98F900ECC187 /* CalculoSalarialPOOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoSalarialPOOUITests.swift; sourceTree = "<group>"; };
 		1C456932264C98F900ECC187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C456941264C991D00ECC187 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		1C456945264CADE900ECC187 /* Colaborador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colaborador.swift; sourceTree = "<group>"; };
 		1C45694B264CAE5000ECC187 /* CalculaSalarioDesenvolvedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaSalarioDesenvolvedor.swift; sourceTree = "<group>"; };
-		1C456957264CB0D100ECC187 /* Desenvolvedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desenvolvedor.swift; sourceTree = "<group>"; };
-		1C45695E264CB24700ECC187 /* ImprimeDados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImprimeDados.swift; sourceTree = "<group>"; };
-		1C456966264CBE5C00ECC187 /* Gerente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gerente.swift; sourceTree = "<group>"; };
-		1C45696E264CBFAB00ECC187 /* CalculaSalarioGerentes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaSalarioGerentes.swift; sourceTree = "<group>"; };
+		1C45695E264CB24700ECC187 /* MaquinaDeSalario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinaDeSalario.swift; sourceTree = "<group>"; };
+		1C45696E264CBFAB00ECC187 /* CalculaSalarioGerente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaSalarioGerente.swift; sourceTree = "<group>"; };
 		1C72E4F6264DA01F009E73B4 /* CalculaSalarioDBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaSalarioDBA.swift; sourceTree = "<group>"; };
 		1C72E4FB264DA0F9009E73B4 /* CalculaSalarioQA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaSalarioQA.swift; sourceTree = "<group>"; };
-		1C72E500264DA162009E73B4 /* DBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBA.swift; sourceTree = "<group>"; };
-		1C72E508264DA179009E73B4 /* QA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QA.swift; sourceTree = "<group>"; };
+		1C72E573264E0E60009E73B4 /* Desenvolvedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Desenvolvedor.swift; sourceTree = "<group>"; };
+		1C72E57B264EAF46009E73B4 /* CalculadoraSalario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculadoraSalario.swift; sourceTree = "<group>"; };
+		1C72E58C264EDDFB009E73B4 /* Funcionario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funcionario.swift; sourceTree = "<group>"; };
+		1C72E594264F06AD009E73B4 /* QA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QA.swift; sourceTree = "<group>"; };
+		1C72E599264F0726009E73B4 /* DBA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBA.swift; sourceTree = "<group>"; };
+		1C72E59E264F0764009E73B4 /* Gerente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gerente.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +125,8 @@
 		1C45690A264C98F300ECC187 /* CalculoSalarialPOO */ = {
 			isa = PBXGroup;
 			children = (
-				1C45695C264CB21800ECC187 /* Colaborador */,
-				1C456956264CB0A800ECC187 /* Cargos */,
+				1C72E56A264E0B52009E73B4 /* Protocolo */,
+				1C45695C264CB21800ECC187 /* Funcionarios */,
 				1C45695D264CB22C00ECC187 /* ImprimeDados */,
 				1C45694A264CAE3000ECC187 /* CalculaSalarios */,
 				1C45690F264C98F300ECC187 /* ViewController.swift */,
@@ -163,36 +165,37 @@
 				1C45694B264CAE5000ECC187 /* CalculaSalarioDesenvolvedor.swift */,
 				1C72E4F6264DA01F009E73B4 /* CalculaSalarioDBA.swift */,
 				1C72E4FB264DA0F9009E73B4 /* CalculaSalarioQA.swift */,
-				1C45696E264CBFAB00ECC187 /* CalculaSalarioGerentes.swift */,
+				1C45696E264CBFAB00ECC187 /* CalculaSalarioGerente.swift */,
 			);
 			path = CalculaSalarios;
 			sourceTree = "<group>";
 		};
-		1C456956264CB0A800ECC187 /* Cargos */ = {
+		1C45695C264CB21800ECC187 /* Funcionarios */ = {
 			isa = PBXGroup;
 			children = (
-				1C456957264CB0D100ECC187 /* Desenvolvedor.swift */,
-				1C456966264CBE5C00ECC187 /* Gerente.swift */,
-				1C72E500264DA162009E73B4 /* DBA.swift */,
-				1C72E508264DA179009E73B4 /* QA.swift */,
+				1C72E58C264EDDFB009E73B4 /* Funcionario.swift */,
+				1C72E573264E0E60009E73B4 /* Desenvolvedor.swift */,
+				1C72E594264F06AD009E73B4 /* QA.swift */,
+				1C72E599264F0726009E73B4 /* DBA.swift */,
+				1C72E59E264F0764009E73B4 /* Gerente.swift */,
 			);
-			path = Cargos;
-			sourceTree = "<group>";
-		};
-		1C45695C264CB21800ECC187 /* Colaborador */ = {
-			isa = PBXGroup;
-			children = (
-				1C456945264CADE900ECC187 /* Colaborador.swift */,
-			);
-			path = Colaborador;
+			path = Funcionarios;
 			sourceTree = "<group>";
 		};
 		1C45695D264CB22C00ECC187 /* ImprimeDados */ = {
 			isa = PBXGroup;
 			children = (
-				1C45695E264CB24700ECC187 /* ImprimeDados.swift */,
+				1C45695E264CB24700ECC187 /* MaquinaDeSalario.swift */,
 			);
 			path = ImprimeDados;
+			sourceTree = "<group>";
+		};
+		1C72E56A264E0B52009E73B4 /* Protocolo */ = {
+			isa = PBXGroup;
+			children = (
+				1C72E57B264EAF46009E73B4 /* CalculadoraSalario.swift */,
+			);
+			path = Protocolo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,18 +329,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C72E4F7264DA01F009E73B4 /* CalculaSalarioDBA.swift in Sources */,
-				1C72E509264DA179009E73B4 /* QA.swift in Sources */,
+				1C72E58D264EDDFB009E73B4 /* Funcionario.swift in Sources */,
+				1C72E57C264EAF46009E73B4 /* CalculadoraSalario.swift in Sources */,
 				1C456910264C98F300ECC187 /* ViewController.swift in Sources */,
+				1C72E59F264F0764009E73B4 /* Gerente.swift in Sources */,
 				1C456916264C98F300ECC187 /* CalculoSalarialPOO.xcdatamodeld in Sources */,
 				1C45690C264C98F300ECC187 /* AppDelegate.swift in Sources */,
-				1C45696F264CBFAC00ECC187 /* CalculaSalarioGerentes.swift in Sources */,
-				1C45695F264CB24700ECC187 /* ImprimeDados.swift in Sources */,
+				1C45696F264CBFAC00ECC187 /* CalculaSalarioGerente.swift in Sources */,
+				1C72E595264F06AD009E73B4 /* QA.swift in Sources */,
+				1C45695F264CB24700ECC187 /* MaquinaDeSalario.swift in Sources */,
 				1C45690E264C98F300ECC187 /* SceneDelegate.swift in Sources */,
-				1C72E501264DA162009E73B4 /* DBA.swift in Sources */,
 				1C45694C264CAE5000ECC187 /* CalculaSalarioDesenvolvedor.swift in Sources */,
-				1C456946264CADE900ECC187 /* Colaborador.swift in Sources */,
-				1C456967264CBE5C00ECC187 /* Gerente.swift in Sources */,
-				1C456958264CB0D100ECC187 /* Desenvolvedor.swift in Sources */,
+				1C72E59A264F0726009E73B4 /* DBA.swift in Sources */,
+				1C72E574264E0E60009E73B4 /* Desenvolvedor.swift in Sources */,
 				1C72E4FC264DA0F9009E73B4 /* CalculaSalarioQA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C72E5B3264F3599009E73B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5B2264F3599009E73B4 /* AppDelegate.swift */; };
+		1C72E5B5264F3599009E73B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5B4264F3599009E73B4 /* SceneDelegate.swift */; };
+		1C72E5B7264F3599009E73B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5B6264F3599009E73B4 /* ViewController.swift */; };
+		1C72E5BA264F3599009E73B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C72E5B8264F3599009E73B4 /* Main.storyboard */; };
+		1C72E5BD264F3599009E73B4 /* VacinaCovid.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5BB264F3599009E73B4 /* VacinaCovid.xcdatamodeld */; };
+		1C72E5BF264F359E009E73B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C72E5BE264F359E009E73B4 /* Assets.xcassets */; };
+		1C72E5C2264F359E009E73B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C72E5C0264F359E009E73B4 /* LaunchScreen.storyboard */; };
+		1C72E5CD264F359E009E73B4 /* VacinaCovidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5CC264F359E009E73B4 /* VacinaCovidTests.swift */; };
+		1C72E5D8264F359E009E73B4 /* VacinaCovidUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5D7264F359E009E73B4 /* VacinaCovidUITests.swift */; };
+		1C72E5EE264F3D07009E73B4 /* Paciente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5ED264F3D07009E73B4 /* Paciente.swift */; };
+		1C72E5F4264F3D4B009E73B4 /* DataDaVacina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5F3264F3D4B009E73B4 /* DataDaVacina.swift */; };
+		1C72E5FA264F3E2C009E73B4 /* Feminino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E5F9264F3E2C009E73B4 /* Feminino.swift */; };
+		1C72E602264F3E9A009E73B4 /* Masculino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E601264F3E9A009E73B4 /* Masculino.swift */; };
+		1C72E60F264F3F56009E73B4 /* CalculoVacinaMasculino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E60E264F3F56009E73B4 /* CalculoVacinaMasculino.swift */; };
+		1C72E617264F5288009E73B4 /* CalculoVacinaFeminino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E616264F5288009E73B4 /* CalculoVacinaFeminino.swift */; };
+		1C72E61D264F58EF009E73B4 /* ImpressoraDeDados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C72E61C264F58EF009E73B4 /* ImpressoraDeDados.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C72E5C9264F359E009E73B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C72E5A7264F3599009E73B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C72E5AE264F3599009E73B4;
+			remoteInfo = VacinaCovid;
+		};
+		1C72E5D4264F359E009E73B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C72E5A7264F3599009E73B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C72E5AE264F3599009E73B4;
+			remoteInfo = VacinaCovid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C72E5AF264F3599009E73B4 /* VacinaCovid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VacinaCovid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C72E5B2264F3599009E73B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C72E5B4264F3599009E73B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1C72E5B6264F3599009E73B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C72E5B9264F3599009E73B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C72E5BC264F3599009E73B4 /* VacinaCovid.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VacinaCovid.xcdatamodel; sourceTree = "<group>"; };
+		1C72E5BE264F359E009E73B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C72E5C1264F359E009E73B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C72E5C3264F359E009E73B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C72E5C8264F359E009E73B4 /* VacinaCovidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacinaCovidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C72E5CC264F359E009E73B4 /* VacinaCovidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacinaCovidTests.swift; sourceTree = "<group>"; };
+		1C72E5CE264F359E009E73B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C72E5D3264F359E009E73B4 /* VacinaCovidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VacinaCovidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C72E5D7264F359E009E73B4 /* VacinaCovidUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacinaCovidUITests.swift; sourceTree = "<group>"; };
+		1C72E5D9264F359E009E73B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C72E5E8264F3643009E73B4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1C72E5ED264F3D07009E73B4 /* Paciente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paciente.swift; sourceTree = "<group>"; };
+		1C72E5F3264F3D4B009E73B4 /* DataDaVacina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDaVacina.swift; sourceTree = "<group>"; };
+		1C72E5F9264F3E2C009E73B4 /* Feminino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feminino.swift; sourceTree = "<group>"; };
+		1C72E601264F3E9A009E73B4 /* Masculino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Masculino.swift; sourceTree = "<group>"; };
+		1C72E60E264F3F56009E73B4 /* CalculoVacinaMasculino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoVacinaMasculino.swift; sourceTree = "<group>"; };
+		1C72E616264F5288009E73B4 /* CalculoVacinaFeminino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculoVacinaFeminino.swift; sourceTree = "<group>"; };
+		1C72E61C264F58EF009E73B4 /* ImpressoraDeDados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpressoraDeDados.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C72E5AC264F3599009E73B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C72E5C5264F359E009E73B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C72E5D0264F359E009E73B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C72E5A6264F3599009E73B4 = {
+			isa = PBXGroup;
+			children = (
+				1C72E5B1264F3599009E73B4 /* VacinaCovid */,
+				1C72E5CB264F359E009E73B4 /* VacinaCovidTests */,
+				1C72E5D6264F359E009E73B4 /* VacinaCovidUITests */,
+				1C72E5B0264F3599009E73B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1C72E5B0264F3599009E73B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C72E5AF264F3599009E73B4 /* VacinaCovid.app */,
+				1C72E5C8264F359E009E73B4 /* VacinaCovidTests.xctest */,
+				1C72E5D3264F359E009E73B4 /* VacinaCovidUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C72E5B1264F3599009E73B4 /* VacinaCovid */ = {
+			isa = PBXGroup;
+			children = (
+				1C72E5F2264F3D2F009E73B4 /* Regras */,
+				1C72E5EC264F3CD7009E73B4 /* Paciente */,
+				1C72E5F8264F3DCF009E73B4 /* DataDaVacina */,
+				1C72E61B264F58C6009E73B4 /* ImpressoraDeDados */,
+				1C72E5B2264F3599009E73B4 /* AppDelegate.swift */,
+				1C72E5B4264F3599009E73B4 /* SceneDelegate.swift */,
+				1C72E5B6264F3599009E73B4 /* ViewController.swift */,
+				1C72E5B8264F3599009E73B4 /* Main.storyboard */,
+				1C72E5BE264F359E009E73B4 /* Assets.xcassets */,
+				1C72E5C0264F359E009E73B4 /* LaunchScreen.storyboard */,
+				1C72E5C3264F359E009E73B4 /* Info.plist */,
+				1C72E5BB264F3599009E73B4 /* VacinaCovid.xcdatamodeld */,
+				1C72E5E8264F3643009E73B4 /* MyPlayground.playground */,
+			);
+			path = VacinaCovid;
+			sourceTree = "<group>";
+		};
+		1C72E5CB264F359E009E73B4 /* VacinaCovidTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C72E5CC264F359E009E73B4 /* VacinaCovidTests.swift */,
+				1C72E5CE264F359E009E73B4 /* Info.plist */,
+			);
+			path = VacinaCovidTests;
+			sourceTree = "<group>";
+		};
+		1C72E5D6264F359E009E73B4 /* VacinaCovidUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C72E5D7264F359E009E73B4 /* VacinaCovidUITests.swift */,
+				1C72E5D9264F359E009E73B4 /* Info.plist */,
+			);
+			path = VacinaCovidUITests;
+			sourceTree = "<group>";
+		};
+		1C72E5EC264F3CD7009E73B4 /* Paciente */ = {
+			isa = PBXGroup;
+			children = (
+				1C72E5ED264F3D07009E73B4 /* Paciente.swift */,
+				1C72E5F9264F3E2C009E73B4 /* Feminino.swift */,
+				1C72E601264F3E9A009E73B4 /* Masculino.swift */,
+			);
+			path = Paciente;
+			sourceTree = "<group>";
+		};
+		1C72E5F2264F3D2F009E73B4 /* Regras */ = {
+			isa = PBXGroup;
+			children = (
+				1C72E5F3264F3D4B009E73B4 /* DataDaVacina.swift */,
+			);
+			path = Regras;
+			sourceTree = "<group>";
+		};
+		1C72E5F8264F3DCF009E73B4 /* DataDaVacina */ = {
+			isa = PBXGroup;
+			children = (
+				1C72E60E264F3F56009E73B4 /* CalculoVacinaMasculino.swift */,
+				1C72E616264F5288009E73B4 /* CalculoVacinaFeminino.swift */,
+			);
+			path = DataDaVacina;
+			sourceTree = "<group>";
+		};
+		1C72E61B264F58C6009E73B4 /* ImpressoraDeDados */ = {
+			isa = PBXGroup;
+			children = (
+				1C72E61C264F58EF009E73B4 /* ImpressoraDeDados.swift */,
+			);
+			path = ImpressoraDeDados;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C72E5AE264F3599009E73B4 /* VacinaCovid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C72E5DC264F359E009E73B4 /* Build configuration list for PBXNativeTarget "VacinaCovid" */;
+			buildPhases = (
+				1C72E5AB264F3599009E73B4 /* Sources */,
+				1C72E5AC264F3599009E73B4 /* Frameworks */,
+				1C72E5AD264F3599009E73B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VacinaCovid;
+			productName = VacinaCovid;
+			productReference = 1C72E5AF264F3599009E73B4 /* VacinaCovid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C72E5C7264F359E009E73B4 /* VacinaCovidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C72E5DF264F359E009E73B4 /* Build configuration list for PBXNativeTarget "VacinaCovidTests" */;
+			buildPhases = (
+				1C72E5C4264F359E009E73B4 /* Sources */,
+				1C72E5C5264F359E009E73B4 /* Frameworks */,
+				1C72E5C6264F359E009E73B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C72E5CA264F359E009E73B4 /* PBXTargetDependency */,
+			);
+			name = VacinaCovidTests;
+			productName = VacinaCovidTests;
+			productReference = 1C72E5C8264F359E009E73B4 /* VacinaCovidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C72E5D2264F359E009E73B4 /* VacinaCovidUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C72E5E2264F359E009E73B4 /* Build configuration list for PBXNativeTarget "VacinaCovidUITests" */;
+			buildPhases = (
+				1C72E5CF264F359E009E73B4 /* Sources */,
+				1C72E5D0264F359E009E73B4 /* Frameworks */,
+				1C72E5D1264F359E009E73B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C72E5D5264F359E009E73B4 /* PBXTargetDependency */,
+			);
+			name = VacinaCovidUITests;
+			productName = VacinaCovidUITests;
+			productReference = 1C72E5D3264F359E009E73B4 /* VacinaCovidUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C72E5A7264F3599009E73B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1C72E5AE264F3599009E73B4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1C72E5C7264F359E009E73B4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1C72E5AE264F3599009E73B4;
+					};
+					1C72E5D2264F359E009E73B4 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1C72E5AE264F3599009E73B4;
+					};
+				};
+			};
+			buildConfigurationList = 1C72E5AA264F3599009E73B4 /* Build configuration list for PBXProject "VacinaCovid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C72E5A6264F3599009E73B4;
+			productRefGroup = 1C72E5B0264F3599009E73B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C72E5AE264F3599009E73B4 /* VacinaCovid */,
+				1C72E5C7264F359E009E73B4 /* VacinaCovidTests */,
+				1C72E5D2264F359E009E73B4 /* VacinaCovidUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C72E5AD264F3599009E73B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C72E5C2264F359E009E73B4 /* LaunchScreen.storyboard in Resources */,
+				1C72E5BF264F359E009E73B4 /* Assets.xcassets in Resources */,
+				1C72E5BA264F3599009E73B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C72E5C6264F359E009E73B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C72E5D1264F359E009E73B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C72E5AB264F3599009E73B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C72E617264F5288009E73B4 /* CalculoVacinaFeminino.swift in Sources */,
+				1C72E5EE264F3D07009E73B4 /* Paciente.swift in Sources */,
+				1C72E5F4264F3D4B009E73B4 /* DataDaVacina.swift in Sources */,
+				1C72E61D264F58EF009E73B4 /* ImpressoraDeDados.swift in Sources */,
+				1C72E5B7264F3599009E73B4 /* ViewController.swift in Sources */,
+				1C72E5B3264F3599009E73B4 /* AppDelegate.swift in Sources */,
+				1C72E5B5264F3599009E73B4 /* SceneDelegate.swift in Sources */,
+				1C72E60F264F3F56009E73B4 /* CalculoVacinaMasculino.swift in Sources */,
+				1C72E602264F3E9A009E73B4 /* Masculino.swift in Sources */,
+				1C72E5FA264F3E2C009E73B4 /* Feminino.swift in Sources */,
+				1C72E5BD264F3599009E73B4 /* VacinaCovid.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C72E5C4264F359E009E73B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C72E5CD264F359E009E73B4 /* VacinaCovidTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C72E5CF264F359E009E73B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C72E5D8264F359E009E73B4 /* VacinaCovidUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C72E5CA264F359E009E73B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C72E5AE264F3599009E73B4 /* VacinaCovid */;
+			targetProxy = 1C72E5C9264F359E009E73B4 /* PBXContainerItemProxy */;
+		};
+		1C72E5D5264F359E009E73B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C72E5AE264F3599009E73B4 /* VacinaCovid */;
+			targetProxy = 1C72E5D4264F359E009E73B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C72E5B8264F3599009E73B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C72E5B9264F3599009E73B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C72E5C0264F359E009E73B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C72E5C1264F359E009E73B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C72E5DA264F359E009E73B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C72E5DB264F359E009E73B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C72E5DD264F359E009E73B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VacinaCovid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RenilsonMoreira.VacinaCovid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C72E5DE264F359E009E73B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VacinaCovid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RenilsonMoreira.VacinaCovid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C72E5E0264F359E009E73B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VacinaCovidTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RenilsonMoreira.VacinaCovidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VacinaCovid.app/VacinaCovid";
+			};
+			name = Debug;
+		};
+		1C72E5E1264F359E009E73B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VacinaCovidTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RenilsonMoreira.VacinaCovidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VacinaCovid.app/VacinaCovid";
+			};
+			name = Release;
+		};
+		1C72E5E3264F359E009E73B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VacinaCovidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RenilsonMoreira.VacinaCovidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VacinaCovid;
+			};
+			name = Debug;
+		};
+		1C72E5E4264F359E009E73B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VacinaCovidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RenilsonMoreira.VacinaCovidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VacinaCovid;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C72E5AA264F3599009E73B4 /* Build configuration list for PBXProject "VacinaCovid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C72E5DA264F359E009E73B4 /* Debug */,
+				1C72E5DB264F359E009E73B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C72E5DC264F359E009E73B4 /* Build configuration list for PBXNativeTarget "VacinaCovid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C72E5DD264F359E009E73B4 /* Debug */,
+				1C72E5DE264F359E009E73B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C72E5DF264F359E009E73B4 /* Build configuration list for PBXNativeTarget "VacinaCovidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C72E5E0264F359E009E73B4 /* Debug */,
+				1C72E5E1264F359E009E73B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C72E5E2264F359E009E73B4 /* Build configuration list for PBXNativeTarget "VacinaCovidUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C72E5E3264F359E009E73B4 /* Debug */,
+				1C72E5E4264F359E009E73B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1C72E5BB264F3599009E73B4 /* VacinaCovid.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1C72E5BC264F3599009E73B4 /* VacinaCovid.xcdatamodel */,
+			);
+			currentVersion = 1C72E5BC264F3599009E73B4 /* VacinaCovid.xcdatamodel */;
+			path = VacinaCovid.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1C72E5A7264F3599009E73B4 /* Project object */;
+}
